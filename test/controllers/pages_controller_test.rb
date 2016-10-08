@@ -1,23 +1,23 @@
 require 'test_helper'
 
-class PagesControllerTest < ActionController::TestCase
+class PagesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get :index
+    get pages_index_url
     assert_response :success
   end
 
   test "should get home" do
-    get :home
+    get pages_home_url
     assert_response :success
   end
 
   test "should get profile" do
-    get :profile
+    get pages_profile_url
     assert_response :success
   end
 
   test "should get explore" do
-    get :explore
+    get pages_explore_url
     assert_response :success
   end
 
