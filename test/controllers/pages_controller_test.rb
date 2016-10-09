@@ -1,13 +1,13 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
+  test "should get Home" do
+    get :Home
     assert_response :success
   end
 
-  test "should get home" do
-    get :home
+  test "should get index" do
+    get :index
     assert_response :success
   end
 
