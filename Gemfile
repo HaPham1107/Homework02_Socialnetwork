@@ -1,9 +1,7 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 # use bootrap 4.0
 gem 'bootstrap', '~> 4.0.0.alpha4'
-gem 'bcrypt', '~> 3.1', '>= 3.1.10'
-#Use gem 'devise' for user
-gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
