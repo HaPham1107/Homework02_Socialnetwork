@@ -46,12 +46,13 @@ Quy trình sử dụng [GIT Workflow](https://www.atlassian.com/git/tutorials/co
 * [x] Có sử dụng tag, pull requests
 
 ## Video Walkthrough
+(https://www.youtube.com/watch?v=brQUNEQzSuI)
 
 Here's a walkthrough of implemented user stories:
+![Video Walkthrough](demo.gif)
 
-![demo.wmv](relative-path-to-your-gif-file-on-github)
 
-GIF created with [demo.gif](http://www.cockos.com/licecap/).
+GIF created with [demo.g](http://www.cockos.com/licecap/).
 
 ## Notes
 
