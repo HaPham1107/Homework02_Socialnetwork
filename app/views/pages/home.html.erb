@@ -15,20 +15,43 @@
     	</div>
 
    		<div class="col-sm-6">
+        <%= render '/components/post_form' %><br><br>
+
         <% for @p in @posts %>
-        <div class="card">
-          <div class="card-block">
-              <p><%= @p.content %></p>
+        <div class="card post-card">
+          <div class="card-block row">
+            <div class="col-sm-1">
+              <img src="/avatar.png" class="rounded-img"></img>
+            </div>
+            <br><br>
+            <div class="clo-sm-11">
+              <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> <span class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
+              <p class="post-content"><%= @p.content %></p>
+            </div>
+            <div class="col-sm-12">
+              <p class="post-links">
+                <a href="#">ViewConversation</a>
+              </p>
+            </div>
+              
+          </div>
+        </div>
+          <% end %>
+          <div class="card post-card">
+            <div class="card-block row">
+              <div class="col-sm-12"></div>
+              <center><img src="/icon.png"></img>
+                <a href="#top"><p class="opacity: .7;">Back to Top</p></a></center>
             </div>
           </div>
-          <% end %>
       </div>
+    
     	<div class="col-sm-3">
    			<div class="card">
    				<div class="card-block">
       				about
-      			</div>
       		</div>
+      	</div>
     	</div>
   	</div>
 </div>
