@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
-  def Home
+  def index
   end
 
-  def index
+  def home
   end
 
   def profile
