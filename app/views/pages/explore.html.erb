@@ -1,13 +1,64 @@
 <div class="container">
-   	<div class="col-sm-6">
+	<div class="row">
+		<div class="col-sm-3">
+    		<div class="card">
+    			<div class="card-block">
+      				Explore yourself!!! :D
+     			</div>
+     		</div>
+
+        <div class="card">
+          <div class="card-block">
+              <h5 style="color: grey; font-size: 125%;">Trends</h5>
+              <a href="">#Trends #1</a><br>
+                <span style="color: grey;">31k Posts</span><br><br>
+              <a href="">#Trends #2</a><br>
+                <span style="color: grey;">25k Posts</span><br><br>
+              <a href="">#Trends #3</a><br>
+                <span style="color: grey;">16k Posts</span><br>
+          </div>
+        </div>
+    	</div>
+
+   		<div class="col-sm-6">
+
         <% for @p in @posts %>
-        	<div class="card">
-          		<div class="card-block">
-              		<p><%= @p.content %></p>
-          		</div>
-        	</div>
-    	<% end %>
-	</div>
+        <div class="card post-card" style="margin-top: 3px">
+          <div class="card-block row">
+            <div class="col-sm-1">
+              <img src="/avatar.png" class="rounded-img"></img>
+            </div>
+            <br><br>
+            <div class="clo-sm-11">
+              <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> <span class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
+              <p class="post-content"><%= @p.content %></p>
+            </div>
+            <div class="col-sm-12">
+              <p class="post-links">
+                <a href="#">View Conversation</a>
+              </p>
+            </div>
+              
+          </div>
+        </div>
+          <% end %>
+          <div class="card post-card">
+            <div class="card-block row">
+              <div class="col-sm-12"></div>
+              <center><img src="/icon.png"></img>
+                <a href="#top"><p class="opacity: .7;">Back to Top</p></a></center>
+            </div>
+          </div>
+      </div>
+    
+    	<div class="col-sm-3">
+   			<div class="card">
+   				<div class="card-block">
+      				<p style="opacity: 0.5; font-size: 90%">© 2016 Social  About  Help  Terms  Privacy  Cookies  Ads info  Brand  Blog  Status  Apps  Jobs  Businesses  Media  Developers</p>
+      		</div>
+      	</div>
+    	</div>
+  	</div>
 </div>
 
 

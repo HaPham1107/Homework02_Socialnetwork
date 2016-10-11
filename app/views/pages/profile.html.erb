@@ -1,7 +1,13 @@
 <div class="row">
   <div class="col-sm-12">
-  	<div class="jumbotron">
-  		<%= @username %>
+  	<div class="jumbotron" style="margin-top: 5px">
+      <h5 style="color: grey; font-size: 125%;"><%= current_user.username %></h5><br>
+  		<div class="col-sm-6" style="font-size: 100%; opacity: 0.7;">Tweets<br>
+          <h6 style="color: #55acee; font-size: 150%;">10</h6>
+      </div>
+      <div class="col-sm-6" style="font-size: 100%; opacity: 0.7;">Followers<br>
+          <h6 style="color: #55acee; font-size: 150%;">5</h6>
+      </div>
   	</div>
   </div>
 </div>
@@ -10,33 +16,54 @@
 	<div class="col-sm-3">
     <div class="card">
     	<div class="card-block">
-      		<p>profile</p>
+      		<img src="/avatar.png" class="rounded-img"></img>
+          <h4><%= current_user.username %></h4>
      	</div>
      </div>
   </div>
 
    		<div class="col-sm-6">
-        <%= render '/components/post_form' %>
+        <%= render '/components/post_form' %><br><br>
 
         <% for @p in @posts %>
-   			<div class="card">
-   				<div class="card-block">
-      				<p><%= @p.content %></p>
-      			</div>
-      		</div>
+        <div class="card post-card">
+          <div class="card-block row">
+            <div class="col-sm-1">
+              <img src="/avatar.png" class="rounded-img"></img>
+            </div>
+            <br><br>
+            <div class="clo-sm-11">
+              <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> <span class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
+              <p class="post-content"><%= @p.content %></p>
+            </div>
+            <div class="col-sm-12">
+              <p class="post-links">
+                <a href="#">View Conversation</a>
+              </p>
+            </div>
+              
+          </div>
+        </div>
           <% end %>
     	</div>
 
     	<div class="col-sm-3">
    			<div class="card">
    				<div class="card-block">
-      				<p> who to follow </p>
+      				<h5 style="color: grey; font-size: 125%;">Who to follows</h5>
+              
       			</div>
       		</div>
 
           <div class="card">
             <div class="card-block">
-                <p> trends </p>
+                <h5 style="color: grey; font-size: 125%;">Trends</h5>
+              <a href="">#Trends #1</a><br>
+                <span style="color: grey;">31k Posts</span><br><br>
+              <a href="">#Trends #2</a><br>
+                <span style="color: grey;">25k Posts</span><br><br>
+              <a href="">#Trends #3</a><br>
+                <span style="color: grey;">16k Posts</span><br>
             </div>
           </div>
       </div>
