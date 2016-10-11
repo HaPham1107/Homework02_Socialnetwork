@@ -5,7 +5,6 @@
 	</div>
 </div>
 
-
 <div class="container">
 	<div class="row">
 		<div class="col-sm-3">
@@ -17,32 +16,29 @@
     	</div>
 
    		<div class="col-sm-6">
+        <% for @p in @posts %>
    			<div class="card">
    				<div class="card-block">
-      				tweets
+      				<p><%= @p.content %></p>
       			</div>
       		</div>
+          <% end %>
     	</div>
+
     	<div class="col-sm-3">
    			<div class="card">
    				<div class="card-block">
-      				who to follow
+      				<p> who to follow </p>
       			</div>
       		</div>
-    	</div>
-  	</div>
-</div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-3 offset-md-9">
-    		<div class="card">
-    			<div class="card-block">
-      				trends
-     			</div>
-     		</div>
-    	</div>
-	</div>
+          <div class="card">
+            <div class="card-block">
+                <p> trends </p>
+            </div>
+          </div>
+      </div>
+  </div>
 </div>
 
 
