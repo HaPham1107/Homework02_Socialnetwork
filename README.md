@@ -1,10 +1,11 @@
-# Homework 1 - *Name of App*
+# Homework 2 - *Twitter Clone*
 
 **Name of your app** Trang web cho phép người dùng chia sẻ và cập nhật trạng thái. Due Date: 24:00 11/10/2016
 
-Danh sách sinh viên: **Your Name Here**
-
-URL: **Insert your Heroku URL here**
+Danh sách sinh viên: 
+**Phạm Văn Hà- 1312162**
+ **Dương Giang Sơn- 1312490**
+URL: **https://floating-refuge-22760.herokuapp.come**
 
 ## Chức năng
 
@@ -48,10 +49,10 @@ Quy trình sử dụng [GIT Workflow](https://www.atlassian.com/git/tutorials/co
 
 Here's a walkthrough of implemented user stories:
 
-![https://youtu.be/brQUNEQzSuI](relative-path-to-your-gif-file-on-github)
-https://youtu.be/brQUNEQzSuI
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-http://imgur.com/a/FH6ct
+![demo.wmv](relative-path-to-your-gif-file-on-github)
+
+GIF created with [demo.gif](http://www.cockos.com/licecap/).
+
 ## Notes
 
 Describe any challenges encountered while building the app.
