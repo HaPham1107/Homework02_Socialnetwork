@@ -1,21 +1,23 @@
-
-<div class="col-sm-12">
-	<div class="jumbotron">
-		<%= @username %>
-	</div>
+<div class="row">
+  <div class="col-sm-12">
+  	<div class="jumbotron">
+  		<%= @username %>
+  	</div>
+  </div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-3">
-    		<div class="card">
-    			<div class="card-block">
-      				profile
-     			</div>
-     		</div>
-    	</div>
+<div class="row">
+	<div class="col-sm-3">
+    <div class="card">
+    	<div class="card-block">
+      		<p>profile</p>
+     	</div>
+     </div>
+  </div>
 
    		<div class="col-sm-6">
+        <%= render '/components/post_form' %>
+
         <% for @p in @posts %>
    			<div class="card">
    				<div class="card-block">
